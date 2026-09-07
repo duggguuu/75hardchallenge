@@ -31,8 +31,6 @@ database, realtime, and photo storage). Both are free.
    - **Project URL** → this is your `VITE_SUPABASE_URL`
    - **anon / public** key → this is your `VITE_SUPABASE_ANON_KEY`
 
-supabase password: T8y33hk*YLuCySr 
-
 ### 2. Run it locally first (optional but nice)
 
 ```bash
