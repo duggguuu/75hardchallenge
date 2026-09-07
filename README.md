@@ -28,10 +28,8 @@ database, realtime, and photo storage). Both are free.
    `supabase-schema.sql` from this project, paste the whole thing in, and click **Run**.
    That creates the tables, the photo bucket, and turns on realtime.
 3. Open **Project Settings → Data API** (older UI: **API**). Copy two values:
-   - **Project URL** → this is your `VITE_SUPABASE_URL`
-   - **anon / public** key → this is your `VITE_SUPABASE_ANON_KEY`
-
-supabase password: T8y33hk*YLuCySr 
+   - **Project URL** → this is your `https://hucofyiturabnzbtrkgr.supabase.co`
+   - **anon / public** key → this is your `sb_publishable_kdkmwdxodgyzSnOIlGN_ig_5O3a8Vnf`
 
 ### 2. Run it locally first (optional but nice)
 
