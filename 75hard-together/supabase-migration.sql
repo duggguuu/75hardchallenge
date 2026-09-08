@@ -13,8 +13,8 @@ alter table public.profiles add column if not exists tagline   text;
 --    workout1 -> { exercises: [{id, name, sets, reps, done}] }
 --    workout2 -> { steps, goal }
 --    diet     -> { meals: [{id, type, name, photo_url}] }
---    water    -> { ml, goal }
---    reading  -> { pages, goal }
+--    water    -> { value, goal }
+--    reading  -> { value, goal }
 alter table public.entries add column if not exists data jsonb not null default '{}'::jsonb;
 
 -- 3. Per-day calendar date + "exception" (rest / skipped) day
