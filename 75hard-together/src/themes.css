@@ -1,0 +1,325 @@
+/* ==================================================================
+   75 Hard · together — theme palettes
+   Six themes, each with a light and a dark palette.
+   Mode is resolved in JS and written to the root element as
+   <html data-theme="forest" data-mode="dark">, so no palette ever
+   has to be duplicated inside a media query.
+   ================================================================== */
+
+/* ---- EMBER — warm paper, streak amber, habit green (default) ---- */
+[data-theme='ember'][data-mode='light'] {
+  --bg: #fffaf0;
+  --surface: #ffffff;
+  --surface-2: #fdf5e7;
+  --surface-3: #f7ead4;
+  --ink: #1c1710;
+  --ink-2: #6b6052;
+  --ink-3: #998c79;
+  --line: #f0e3cd;
+  --line-2: #ddcbaa;
+  --brand: #b85f08;
+  --brand-ink: #ffffff;
+  --go: #0f7a4a;
+  --go-soft: #d6f0e1;
+  --duggu: #0c6d64;
+  --duggu-soft: #d2ebe8;
+  --pumpkin: #c9520b;
+  --pumpkin-soft: #fbe0cb;
+  --mesh-1: rgba(217, 119, 6, .13);
+  --mesh-2: rgba(5, 150, 105, .10);
+  --on-duggu: #ffffff;
+  --on-pumpkin: #ffffff;
+  --on-go: #ffffff;
+  color-scheme: light;
+}
+[data-theme='ember'][data-mode='dark'] {
+  --bg: #14100a;
+  --surface: #1f1912;
+  --surface-2: #281f16;
+  --surface-3: #342818;
+  --ink: #f8f0e3;
+  --ink-2: #b6a894;
+  --ink-3: #85796a;
+  --line: #33291d;
+  --line-2: #4a3b28;
+  --brand: #f0a340;
+  --brand-ink: #23180a;
+  --go: #4ecb8f;
+  --go-soft: #163a2a;
+  --duggu: #46c9bb;
+  --duggu-soft: #10332f;
+  --pumpkin: #ff9048;
+  --pumpkin-soft: #3d2113;
+  --mesh-1: rgba(240, 163, 64, .16);
+  --mesh-2: rgba(78, 203, 143, .10);
+  --on-duggu: #10231f;
+  --on-pumpkin: #2b1408;
+  --on-go: #08251a;
+  color-scheme: dark;
+}
+
+/* ---- GLASS — translucent panels over a colour mesh --------------- */
+[data-theme='glass'][data-mode='light'] {
+  --bg: #eef1fa;
+  --surface: rgba(255, 255, 255, .62);
+  --surface-2: rgba(255, 255, 255, .42);
+  --surface-3: rgba(255, 255, 255, .82);
+  --ink: #171a2e;
+  --ink-2: #5c6180;
+  --ink-3: #8a8fa8;
+  --line: rgba(255, 255, 255, .75);
+  --line-2: rgba(110, 120, 180, .28);
+  --brand: #5145d8;
+  --brand-ink: #ffffff;
+  --go: #0d8a63;
+  --go-soft: rgba(13, 138, 99, .16);
+  --duggu: #1f7ac4;
+  --duggu-soft: rgba(31, 122, 196, .16);
+  --pumpkin: #d0417f;
+  --pumpkin-soft: rgba(208, 65, 127, .16);
+  --mesh-1: rgba(120, 108, 255, .40);
+  --mesh-2: rgba(255, 128, 196, .32);
+  --mesh-3: rgba(80, 220, 220, .30);
+  --card-backdrop: blur(22px) saturate(1.6);
+  --on-duggu: #ffffff;
+  --on-pumpkin: #ffffff;
+  --on-go: #ffffff;
+  color-scheme: light;
+}
+[data-theme='glass'][data-mode='dark'] {
+  --bg: #0a0b18;
+  --surface: rgba(255, 255, 255, .075);
+  --surface-2: rgba(255, 255, 255, .045);
+  --surface-3: rgba(255, 255, 255, .13);
+  --ink: #f1f2fb;
+  --ink-2: #a4a8c8;
+  --ink-3: #767a99;
+  --line: rgba(255, 255, 255, .13);
+  --line-2: rgba(255, 255, 255, .24);
+  --brand: #9b8cff;
+  --brand-ink: #14102e;
+  --go: #43dfa4;
+  --go-soft: rgba(67, 223, 164, .16);
+  --duggu: #5ac8f5;
+  --duggu-soft: rgba(90, 200, 245, .16);
+  --pumpkin: #ff7ab0;
+  --pumpkin-soft: rgba(255, 122, 176, .16);
+  --mesh-1: rgba(120, 108, 255, .40);
+  --mesh-2: rgba(255, 90, 170, .28);
+  --mesh-3: rgba(40, 220, 220, .24);
+  --card-backdrop: blur(22px) saturate(1.5);
+  --on-duggu: #04202e;
+  --on-pumpkin: #34071b;
+  --on-go: #052a1e;
+  color-scheme: dark;
+}
+
+/* ---- FOREST — sage, moss, bark ---------------------------------- */
+[data-theme='forest'][data-mode='light'] {
+  --bg: #f2f6ef;
+  --surface: #ffffff;
+  --surface-2: #eaf1e4;
+  --surface-3: #dfe9d7;
+  --ink: #151f16;
+  --ink-2: #5b6a58;
+  --ink-3: #8a9686;
+  --line: #dfe8d8;
+  --line-2: #c3d3b8;
+  --brand: #2f6b3f;
+  --brand-ink: #ffffff;
+  --go: #2f6b3f;
+  --go-soft: #d8e9d6;
+  --duggu: #1f6b5e;
+  --duggu-soft: #d3e9e2;
+  --pumpkin: #a35a12;
+  --pumpkin-soft: #f2e2ca;
+  --mesh-1: rgba(47, 107, 63, .14);
+  --mesh-2: rgba(163, 90, 18, .09);
+  --on-duggu: #ffffff;
+  --on-pumpkin: #ffffff;
+  --on-go: #ffffff;
+  color-scheme: light;
+}
+[data-theme='forest'][data-mode='dark'] {
+  --bg: #0a1310;
+  --surface: #132019;
+  --surface-2: #182920;
+  --surface-3: #21372a;
+  --ink: #e9f2e6;
+  --ink-2: #9db39a;
+  --ink-3: #708a70;
+  --line: #21332a;
+  --line-2: #33503e;
+  --brand: #6fc98a;
+  --brand-ink: #08170e;
+  --go: #6fc98a;
+  --go-soft: #16341f;
+  --duggu: #4fc9b4;
+  --duggu-soft: #11332e;
+  --pumpkin: #e0a34c;
+  --pumpkin-soft: #3a2a14;
+  --mesh-1: rgba(111, 201, 138, .16);
+  --mesh-2: rgba(224, 163, 76, .10);
+  --on-duggu: #07231f;
+  --on-pumpkin: #2b1e08;
+  --on-go: #08170e;
+  color-scheme: dark;
+}
+
+/* ---- OCEAN — deep water, foam, coral ---------------------------- */
+[data-theme='ocean'][data-mode='light'] {
+  --bg: #f0f7fb;
+  --surface: #ffffff;
+  --surface-2: #e7f1f8;
+  --surface-3: #d9eaf4;
+  --ink: #0d1c26;
+  --ink-2: #526672;
+  --ink-3: #7f939f;
+  --line: #daeaf3;
+  --line-2: #b9d6e6;
+  --brand: #0b6f8c;
+  --brand-ink: #ffffff;
+  --go: #0d7f6a;
+  --go-soft: #d3ece5;
+  --duggu: #0b6f8c;
+  --duggu-soft: #d3e8f0;
+  --pumpkin: #c2432f;
+  --pumpkin-soft: #f7dcd6;
+  --mesh-1: rgba(11, 111, 140, .14);
+  --mesh-2: rgba(194, 67, 47, .09);
+  --on-duggu: #ffffff;
+  --on-pumpkin: #ffffff;
+  --on-go: #ffffff;
+  color-scheme: light;
+}
+[data-theme='ocean'][data-mode='dark'] {
+  --bg: #05121a;
+  --surface: #0d1f2b;
+  --surface-2: #112836;
+  --surface-3: #183546;
+  --ink: #e6f2f8;
+  --ink-2: #94adbc;
+  --ink-3: #6b8493;
+  --line: #17303f;
+  --line-2: #244a60;
+  --brand: #45c2e8;
+  --brand-ink: #04151d;
+  --go: #43d6b4;
+  --go-soft: #0e352e;
+  --duggu: #45c2e8;
+  --duggu-soft: #0d2f3d;
+  --pumpkin: #ff7a63;
+  --pumpkin-soft: #3d1f1a;
+  --mesh-1: rgba(69, 194, 232, .16);
+  --mesh-2: rgba(255, 122, 99, .11);
+  --on-duggu: #041d28;
+  --on-pumpkin: #33100a;
+  --on-go: #042219;
+  color-scheme: dark;
+}
+
+/* ---- SUNSET — dusk pink, violet, gold --------------------------- */
+[data-theme='sunset'][data-mode='light'] {
+  --bg: #fff5f3;
+  --surface: #ffffff;
+  --surface-2: #ffeae6;
+  --surface-3: #ffdcd6;
+  --ink: #241019;
+  --ink-2: #74565f;
+  --ink-3: #a2838d;
+  --line: #f9dfd9;
+  --line-2: #efc3ba;
+  --brand: #cf3a72;
+  --brand-ink: #ffffff;
+  --go: #a24a12;
+  --go-soft: #fae0cb;
+  --duggu: #7a3fbd;
+  --duggu-soft: #ebdefa;
+  --pumpkin: #cf3a72;
+  --pumpkin-soft: #fbdbe7;
+  --mesh-1: rgba(207, 58, 114, .14);
+  --mesh-2: rgba(122, 63, 189, .11);
+  --mesh-3: rgba(245, 158, 11, .13);
+  --on-duggu: #ffffff;
+  --on-pumpkin: #ffffff;
+  --on-go: #ffffff;
+  color-scheme: light;
+}
+[data-theme='sunset'][data-mode='dark'] {
+  --bg: #150a11;
+  --surface: #21121b;
+  --surface-2: #2a1722;
+  --surface-3: #37202c;
+  --ink: #fbeaf1;
+  --ink-2: #c19dae;
+  --ink-3: #927382;
+  --line: #331f2a;
+  --line-2: #4d3040;
+  --brand: #ff77a8;
+  --brand-ink: #1e0812;
+  --go: #ffb057;
+  --go-soft: #3d2712;
+  --duggu: #b78bff;
+  --duggu-soft: #291a3d;
+  --pumpkin: #ff77a8;
+  --pumpkin-soft: #3d1a29;
+  --mesh-1: rgba(255, 119, 168, .18);
+  --mesh-2: rgba(183, 139, 255, .14);
+  --mesh-3: rgba(255, 176, 87, .12);
+  --on-duggu: #190a2e;
+  --on-pumpkin: #2e0715;
+  --on-go: #2e1705;
+  color-scheme: dark;
+}
+
+/* ---- MONO — quiet, high-contrast, no colour noise --------------- */
+[data-theme='mono'][data-mode='light'] {
+  --bg: #f7f7f6;
+  --surface: #ffffff;
+  --surface-2: #f0f0ee;
+  --surface-3: #e6e6e3;
+  --ink: #131313;
+  --ink-2: #5f5f5c;
+  --ink-3: #8d8d89;
+  --line: #e6e6e3;
+  --line-2: #cbcbc6;
+  --brand: #171717;
+  --brand-ink: #ffffff;
+  --go: #2c6e3d;
+  --go-soft: #dcebe0;
+  --duggu: #2f4858;
+  --duggu-soft: #dde5ea;
+  --pumpkin: #7a4419;
+  --pumpkin-soft: #eee0d3;
+  --mesh-1: rgba(0, 0, 0, .05);
+  --mesh-2: rgba(0, 0, 0, .03);
+  --on-duggu: #ffffff;
+  --on-pumpkin: #ffffff;
+  --on-go: #ffffff;
+  color-scheme: light;
+}
+[data-theme='mono'][data-mode='dark'] {
+  --bg: #0b0b0b;
+  --surface: #161616;
+  --surface-2: #1d1d1d;
+  --surface-3: #272727;
+  --ink: #f2f2f0;
+  --ink-2: #a5a5a1;
+  --ink-3: #7a7a76;
+  --line: #262626;
+  --line-2: #3b3b3b;
+  --brand: #f2f2f0;
+  --brand-ink: #0b0b0b;
+  --go: #6fce8b;
+  --go-soft: #17301d;
+  --duggu: #8fc0dd;
+  --duggu-soft: #16262f;
+  --pumpkin: #e0a06a;
+  --pumpkin-soft: #2e2015;
+  --mesh-1: rgba(255, 255, 255, .05);
+  --mesh-2: rgba(255, 255, 255, .03);
+  --on-duggu: #0a1218;
+  --on-pumpkin: #17100a;
+  --on-go: #07160c;
+  color-scheme: dark;
+}
